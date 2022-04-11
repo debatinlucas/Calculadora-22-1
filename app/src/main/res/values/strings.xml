@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="c">C</string>
+    <string name="mplus">M+</string>
+    <string name="mr">MR</string>
+    <string name="percentual">%</string>
+</resources>
