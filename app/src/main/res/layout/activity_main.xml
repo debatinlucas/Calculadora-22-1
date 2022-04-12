@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,13 +7,13 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/operacoes"
+        android:id="@+id/textViewOperacao"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <TextView
-        android:id="@+id/resultados"
+        android:id="@+id/textViewResultado"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -26,7 +25,7 @@
         android:layout_margin="10dp">
 
         <Button
-            android:id="@+id/buttonClear"
+            android:id="@+id/buttonLimpar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -34,30 +33,30 @@
             android:text="@string/c" />
 
         <Button
-            android:id="@+id/buttonMemoryPlus"
+            android:id="@+id/buttonAbrirParenteses"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:text="@string/mplus" />
+            android:text="@string/abrir_parenteses" />
 
         <Button
-            android:id="@+id/buttonMemoryRead"
+            android:id="@+id/buttonFecharParenteses"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:text="@string/mr" />
+            android:text="@string/fechar_parenteses" />
 
         <Button
-            android:id="@+id/buttonPercentual"
+            android:id="@+id/buttonElevado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginStart="5dp"
-            android:text="@string/percentual" />
+            android:text="@string/elevado" />
 
     </LinearLayout>
 
@@ -73,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginEnd="5dp"
-            android:text="7" />
+            android:text="@string/_7" />
 
         <Button
             android:id="@+id/button8"
@@ -82,7 +81,7 @@
             android:layout_weight="1"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:text="8" />
+            android:text="@string/_8" />
 
         <Button
             android:id="@+id/button9"
@@ -91,7 +90,7 @@
             android:layout_weight="1"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:text="9" />
+            android:text="@string/_9" />
 
         <Button
             android:id="@+id/buttonDivisao"
@@ -99,7 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginStart="5dp"
-            android:text="/" />
+            android:text="@string/divisao" />
 
     </LinearLayout>
 
@@ -115,7 +114,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginEnd="5dp"
-            android:text="4" />
+            android:text="@string/_4" />
 
         <Button
             android:id="@+id/button5"
@@ -124,7 +123,7 @@
             android:layout_weight="1"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:text="5" />
+            android:text="@string/_5" />
 
         <Button
             android:id="@+id/button6"
@@ -133,7 +132,7 @@
             android:layout_weight="1"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:text="6" />
+            android:text="@string/_6" />
 
         <Button
             android:id="@+id/buttonMultiplicacao"
@@ -141,7 +140,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginStart="5dp"
-            android:text="*" />
+            android:text="@string/multiplicacao" />
 
     </LinearLayout>
 
@@ -157,7 +156,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginEnd="5dp"
-            android:text="1" />
+            android:text="@string/_1" />
 
         <Button
             android:id="@+id/button2"
@@ -166,7 +165,7 @@
             android:layout_weight="1"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:text="2" />
+            android:text="@string/_2" />
 
         <Button
             android:id="@+id/button3"
@@ -175,7 +174,7 @@
             android:layout_weight="1"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:text="3" />
+            android:text="@string/_3" />
 
         <Button
             android:id="@+id/buttonSubtracao"
@@ -183,7 +182,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginStart="5dp"
-            android:text="-" />
+            android:text="@string/subtracao" />
 
     </LinearLayout>
 
@@ -199,7 +198,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginEnd="5dp"
-            android:text="0" />
+            android:text="@string/_0" />
 
         <Button
             android:id="@+id/buttonVirgula"
@@ -208,7 +207,7 @@
             android:layout_weight="1"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:text="," />
+            android:text="@string/virgula" />
 
         <Button
             android:id="@+id/buttonIgual"
@@ -217,7 +216,7 @@
             android:layout_weight="1"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:text="=" />
+            android:text="@string/igual" />
 
         <Button
             android:id="@+id/buttonAdicao"
@@ -225,7 +224,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginStart="5dp"
-            android:text="+" />
+            android:text="@string/adicao" />
 
     </LinearLayout>
 
